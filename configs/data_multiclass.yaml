@@ -1,0 +1,10 @@
+path: ./merged_multiclass_dataset
+train: train/images
+val: valid/images
+test: test/images
+nc: 4
+names:
+  0: Drone
+  1: Bird
+  2: Plane
+  3: Kite

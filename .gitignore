@@ -1,0 +1,46 @@
+# .gitignore for Drone Detection Transfer Learning Project
+
+# ─── Large Dataset Files ──────────────────────────────────────────────────────
+merged_multiclass_dataset/
+*.zip
+*.tar.gz
+
+# ─── Model Weights (large binary files) ──────────────────────────────────────
+# Keep only the final best.pt and mock weights, ignore all other .pt files
+runs/
+*.pt
+!models/best_mock.pt
+!models/best.pt
+
+# ─── Python Caches ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ─── Virtual Environments ─────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+
+# ─── OS Files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── IDE / Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ─── Training Artifacts ───────────────────────────────────────────────────────
+*.log
+nohup.out
+training.log
+
+# ─── YOLO Cache Files ─────────────────────────────────────────────────────────
+*.cache
